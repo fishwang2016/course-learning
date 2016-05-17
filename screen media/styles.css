@@ -1,0 +1,90 @@
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+
+	margin:0;
+	padding:0;
+
+}
+
+.body{
+
+
+	font-size: 48px;
+	font-weight: bold;
+
+	margin:0 auto;
+	
+}
+
+@media screen and (max-width: 400px){
+
+
+.body{ display: flex; flex-wrap:wrap;}
+
+.red{width:100%; order:2;}
+.blue{width:50%;  order:3;}
+.green{width: 50%; order:4;}
+.black{width: 100%; order:1;}
+
+
+}
+
+
+@media screen and (min-width: 600px){
+
+
+
+.body{ display: flex; flex-wrap:wrap;}
+
+.red{width:100%; order:1;}
+.blue{width:50%;  order:2;}
+.green{width: 50%; order:3;}
+.black{width: 100%; order:4;}
+
+
+
+
+}
+
+
+@media screen and (min-width: 401px) and (max-width: 599px){
+
+
+.body{ display: flex; flex-wrap:wrap;}
+
+.red{width:100%; order:4;}
+.blue{width:50%;  order:1;}
+.green{width: 50%; order:2;}
+.black{width: 100%; order:3;}
+
+
+}
+
+
+
+.green, .blue, .red, .black{
+
+  min-height: 150px;
+}
+
+.green{
+	background-color: blue;
+}
+.blue{
+
+	background-color: red;
+}
+
+.red{
+	background-color: green;
+}
+.black{
+	background-color: black;
+}
